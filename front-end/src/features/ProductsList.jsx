@@ -17,7 +17,7 @@ function ProductsList() {
 
   return (
     <div className="page">
-      <h2>🏭 Linha de Produção</h2>
+      <h2> Linha de Produção</h2>
 
       <ProductForm />
 

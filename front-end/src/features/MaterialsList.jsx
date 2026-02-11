@@ -17,7 +17,7 @@ function MaterialsList() {
 
   return (
     <div className="page">
-      <h2>📦 Estoque de Matéria-Prima</h2>
+      <h2> Estoque de Matéria-Prima</h2>
 
       <MaterialForm />
 

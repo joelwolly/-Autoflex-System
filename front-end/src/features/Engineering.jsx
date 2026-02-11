@@ -7,17 +7,15 @@ import { fetchCompositions, addComposition } from './compositionSlice';
 function Engineering() {
   const dispatch = useDispatch();
 
-  // Buscar dados de todos os lugares
   const materials = useSelector((state) => state.materials.items);
   const products = useSelector((state) => state.products.items);
   const compositions = useSelector((state) => state.composition.items);
 
-  // Estados do formulário
   const [selectedProduct, setSelectedProduct] = useState('');
   const [selectedMaterial, setSelectedMaterial] = useState('');
   const [quantity, setQuantity] = useState('');
 
-  // Carregar dados ao abrir a tela
+
   useEffect(() => {
     dispatch(fetchMaterials());
     dispatch(fetchProducts());
@@ -36,14 +34,12 @@ function Engineering() {
     }));
 
     setQuantity('');
-    // Não limpamos os produtos/materiais para facilitar cadastros seguidos
   };
 
   return (
     <div>
-      <h2>⚙️ Engenharia de Produto (Ficha Técnica)</h2>
+      <h2> Engenharia de Produto (Ficha Técnica)</h2>
 
-      {/* Formulário de Vinculação */}
       <div className="card">
         <h3>Definir Composição</h3>
         <form onSubmit={handleSubmit}>
@@ -93,7 +89,7 @@ function Engineering() {
         </form>
       </div>
 
-      {/* Tabela de Composições */}
+
       <div className="card">
         <h3>Estruturas Definidas</h3>
         {compositions.length === 0 ? (

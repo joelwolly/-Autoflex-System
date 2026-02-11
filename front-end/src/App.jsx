@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="app-container">
       <nav>
-        <h1>🏭 Autoflex System</h1>
+        <h1> Autoflex System</h1>
         <div>
           <Link to="/">Matérias-Primas</Link>
           <Link to="/produtos">Produtos</Link>

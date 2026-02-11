@@ -15,12 +15,11 @@ function ProductForm() {
     const newProduct = {
       name: name,
       code: code,
-      price: parseFloat(price) // Converte texto para número decimal
+      price: parseFloat(price)
     };
 
     dispatch(addProduct(newProduct));
 
-    // Limpar formulário
     setName('');
     setCode('');
     setPrice('');
@@ -58,7 +57,7 @@ function ProductForm() {
           <label>Preço de Venda (R$):</label>
           <input 
             type="number" 
-            step="0.01" // Permite centavos
+            step="0.01" 
             value={price} 
             onChange={(e) => setPrice(e.target.value)} 
             placeholder="0.00"

@@ -1,13 +1,11 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import api from '../services/api';
 
-// Buscar produtos no Back-end
 export const fetchProducts = createAsyncThunk('products/fetchProducts', async () => {
     const response = await api.get('/products');
     return response.data;
 });
 
-// Salvar um novo produto
 export const addProduct = createAsyncThunk('products/addProduct', async (newProduct) => {
     const response = await api.post('/products', newProduct);
     return response.data;

@@ -25,7 +25,7 @@ function MaterialForm() {
 
   return (
     <div className="card">
-      <h3>➕ Novo Material</h3>
+      <h3> Novo Material</h3>
 
       <form onSubmit={handleSubmit}>
         <div className="form-group">
