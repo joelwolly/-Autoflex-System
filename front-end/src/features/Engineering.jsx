@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchMaterials } from './materialsSlice';
-import { fetchProducts } from './productsSlice';
+import { fetchProducts } from './productsSlice'; 
 import { fetchCompositions, addComposition } from './compositionSlice';
 
 function Engineering() {

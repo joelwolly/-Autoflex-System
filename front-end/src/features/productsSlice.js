@@ -12,6 +12,7 @@ export const addProduct = createAsyncThunk('products/addProduct', async (newProd
 });
 
 const productsSlice = createSlice({
+    
     name: 'products',
     initialState: {
         items: [],
